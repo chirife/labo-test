@@ -1,0 +1,29 @@
+<form #f="ngForm" novalidate>
+   
+   <!-- Radiobuttons -->
+   <div *ngFor="let opt of types_filter_country; let idx = index" class="form-check-inline pb-2">
+      
+      <label class="form-check-label">
+         <input type="radio" name="radiofilter" [checked]="idx === 0" (change)="onOptionChange(opt)" class="form-check-input"> {{ opt.value }}
+      </label>
+
+   </div>
+
+   <!-- Input and Button -->
+   <div class="input-group">
+      
+      <input id="name" type="text" class="form-control" 
+            (keydown.enter)="onSubmit(filter)" 
+            [(ngModel)]="filter.text" name="filter" required > 
+      
+      <div class="input-group-append">
+         
+         <button [disabled]="!filter.text" class="btn" [ngClass]="filter.text ? 'btn-primary' : 'btn-outline-secondary'" type="button" (click)="onSubmit(filter)">
+            Búscar
+         </button>
+               
+      </div>
+
+   </div>
+
+</form>

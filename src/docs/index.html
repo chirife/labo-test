@@ -1,0 +1,143 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>labotest documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+	      <link rel="stylesheet" href="./styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="./" class="navbar-brand">labotest documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content getting-started">
+                   <div class="content-data">
+
+<h1 id="-computer-labotest">:computer: LaboTest</h1>
+<p>Aplicación web SPA generado <strong>Angular CLI</strong> y desarrollado con <strong>Angular 6</strong> y <strong>Bootstrap 4</strong>:</p>
+<h2 id="-package-modulos">:package: Modulos</h2>
+<ul>
+<li><strong>Shared</strong>: Contiene los elementos reutilizables en el resto de la aplicación.</li>
+<li><strong>Routes</strong>: Contiene las rutas de la aplicación divididas en sub-modulos.</li>
+<li><strong>UI</strong>: Contiene la estructura base de la aplicación (Layout).</li>
+</ul>
+<h2 id="-clipboard-instalaci-n">:clipboard: Instalación</h2>
+<p>1- Clonar desde el repositorio en <a href="https://github.com/mchirife/labo-test">Github</a>.</p>
+<p>2- Instalar las dependencias utilizando <strong>npm</strong></p>
+<div><pre class="line-numbers"><code class="language-none">    npm install</code></pre></div><div><pre class="line-numbers"><code class="language-none">Angular CLI: 6.0.8
+Node: 10.9.0
+OS: linux x64
+Angular: 6.1.10
+... animations, common, compiler, compiler-cli, core, forms
+... http, language-service, platform-browser
+... platform-browser-dynamic, router
+
+Package                           Version
+-----------------------------------------------------------
+&#64;angular-devkit/architect         0.6.8
+&#64;angular-devkit/build-angular     0.6.8
+&#64;angular-devkit/build-optimizer   0.6.8
+&#64;angular-devkit/core              0.6.8
+&#64;angular-devkit/schematics        0.6.8
+&#64;angular/cli                      6.0.8
+&#64;ngtools/webpack                  6.0.8
+&#64;schematics/angular               0.6.8
+&#64;schematics/update                0.6.8
+rxjs                              6.3.3
+typescript                        2.7.2
+webpack                           4.8.3</code></pre></div><h2 id="-green_book-ejecutar-con-angular-cli">:green_book: Ejecutar con Angular CLI</h2>
+<p>Ejecutar el proyecto localmente apuntando al entorno de <strong>Prueba</strong>:</p>
+<div><pre class="line-numbers"><code class="language-none">    ng serve</code></pre></div><p>Ejecutar el proyecto localmente apuntando al entorno de <strong>Producción</strong>:</p>
+<div><pre class="line-numbers"><code class="language-none">    ng serve --prod</code></pre></div><h2 id="-whale-ejecutar-con-docker">:whale: Ejecutar con Docker</h2>
+<p>1- Compilar el proyecto, por defecto se crea en el directorio local ./dist/</p>
+<div><pre class="line-numbers"><code class="language-none">    ng build --prod --aot</code></pre></div><p>2- Ejecutar los siguientes comandos</p>
+<div><pre class="line-numbers"><code class="language-none">docker-compose build
+docker-compose up</code></pre></div><blockquote>
+<p>NOTA: Para bajar los contenedores y borrar la imagen, utilizar :</p>
+</blockquote>
+<div><pre class="line-numbers"><code class="language-none">docker-compose down --rmi all</code></pre></div><h2 id="-thought_balloon-documentaci-n-t-cnica">:thought_balloon: Documentación Técnica</h2>
+<p>Para poder acceder a la documentación técnica del proyecto podemos ejecutar el siguiente comando:</p>
+<div><pre class="line-numbers"><code class="language-none">    npm run compodoc</code></pre></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 0;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'getting-started';
+            var COMPODOC_CURRENT_PAGE_URL = 'index.html';
+       </script>
+
+       <script src="./js/libs/custom-elements.min.js"></script>
+       <script src="./js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="./js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="./js/menu-wc.js" defer></script>
+
+       <script src="./js/libs/bootstrap-native.js"></script>
+
+       <script src="./js/libs/es6-shim.min.js"></script>
+       <script src="./js/libs/EventDispatcher.js"></script>
+       <script src="./js/libs/promise.min.js"></script>
+       <script src="./js/libs/zepto.min.js"></script>
+
+       <script src="./js/compodoc.js"></script>
+
+       <script src="./js/tabs.js"></script>
+       <script src="./js/menu.js"></script>
+       <script src="./js/libs/clipboard.min.js"></script>
+       <script src="./js/libs/prism.js"></script>
+       <script src="./js/sourceCode.js"></script>
+          <script src="./js/search/search.js"></script>
+          <script src="./js/search/lunr.min.js"></script>
+          <script src="./js/search/search-lunr.js"></script>
+          <script src="./js/search/search_index.js"></script>
+       <script src="./js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

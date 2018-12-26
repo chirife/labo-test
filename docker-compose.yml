@@ -1,0 +1,14 @@
+version: '2'
+
+services:
+  labotest-frontend:
+    container_name: labotest-frontend
+    image: labotest-frontend
+    build:
+      context: .
+    volumes:
+      - /etc/localtime:/etc/localtime:ro  # Para syncronizar el clock del contenedor con el del host
+      - /etc/timezone:/etc/timezone:ro    # Para syncronizar el clock del contenedor con el del host
+    restart: always
+    ports:
+      - "9000:80"
