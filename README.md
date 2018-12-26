@@ -10,7 +10,7 @@ Aplicación web SPA generado **Angular CLI** y desarrollado con **Angular 6** y 
 
 ## :clipboard: Instalación
 
-1- Clonar desde el repositorio en [Github](https://github.com/mchirife/labo-test).
+1- Clonar el proyecto.
 
 2- Instalar las dependencias utilizando **npm**
 ```
